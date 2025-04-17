@@ -8,11 +8,13 @@ import astroLogo from '../assets/astro.svg';
   </div>
   
   <main>
-    <!-- Hero section removed as requested -->
+    <h1>언어를 사랑하는 사람과<br /> 함께 가장 빠른 학습 여정을 시작하세요</h1>
   </main>
 </div>
 
 <style>
+  @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
   /* Reset and base styles */
   * {
     margin: 0;
@@ -35,7 +37,7 @@ import astroLogo from '../assets/astro.svg';
   body {
     background-color: var(--background);
     color: var(--text);
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Spoqa Han Sans Neo', 'Inter', system-ui, sans-serif;
   }
 
   /* Updated gradient background with expansion animation */
@@ -94,6 +96,22 @@ import astroLogo from '../assets/astro.svg';
     inset: 0;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
     pointer-events: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.4;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
   }
 
   .container {
